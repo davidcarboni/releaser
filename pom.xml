@@ -1,11 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.davidcarboni</groupId>
 	<artifactId>releaser</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Releaser</name>
-	<description>Test to see if I can prepare and perform a release from Maven.</description>
+	<description>
+		An example for getting your GitHub project to Maven Central. Demonstrates required POM information and release plugin configuration. 
+		Many thanks to: http://datumedge.blogspot.co.uk/2012/05/publishing-from-github-to-maven-central.html
+	</description>
 	<url>https://github.com/davidcarboni/releaser</url>
 
 	<licenses>
@@ -16,18 +20,16 @@
 		</license>
 	</licenses>
 
-	<organization>
-		<name>Workdocx</name>
-		<url>http://workdocx.com/</url>
-	</organization>
-
 	<scm>
 		<url>https://github.com/davidcarboni/releaser</url>
 		<connection>scm:git:git://github.com/davidcarboni/releaser.git</connection>
 		<developerConnection>scm:git:git@github.com:davidcarboni/releaser.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 
+	<!-- You'll probably want to test this out with a local copy of Nexus OSS. -->
+	<!-- Change these to the Sonatype Nexus repositories, to match settings.xml 
+		as described above when you actually want to release. -->
 	<distributionManagement>
 		<snapshotRepository>
 			<id>localhost-nexus-snapshots</id>
@@ -46,32 +48,12 @@
 	</properties>
 
 	<dependencies>
-
-
-		<!-- Test dependencies -->
-		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.4</version>
-			<scope>test</scope>
-		</dependency>
-
-
-		<!-- Main dependencies -->
-		
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.6</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -154,8 +136,22 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.4.1</version>
 				<configuration>
-<!-- 					<arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments> -->
+
+					<!-- Automated passphrase entry: -->
+
+					<!-- To pass your passphrase to the build automatically, so avoiding 
+						manual interaction, you'll need to put the passphrase into settings.xml. 
+						You don't really want that to be in plain text, so you'll want to follow: 
+						http://maven.apache.org/guides/mini/guide-encryption.html -->
+					<!-- <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments> -->
+
+					<!-- Manual passphrase entry: -->
+
+					<!-- This is the simplest secure solution, but requires you to type 
+						your key passphrase in manually when performing a release. No biggie unless 
+						you want your CI server to decide when to release for you. -->
 					<mavenExecutorId>forked-path</mavenExecutorId>
+
 				</configuration>
 			</plugin>
 
@@ -200,8 +196,8 @@
 			<id>david</id>
 			<name>David Carboni</name>
 			<email>david@carboni.co</email>
-			<organization>Workdocx</organization>
-			<organizationUrl>http://workdocx.com</organizationUrl>
+			<organization>Carboni</organization>
+			<organizationUrl>https://github.com/davidcarboni</organizationUrl>
 			<url>https://github.com/davidcarboni</url>
 		</developer>
 	</developers>
