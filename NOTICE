@@ -1,7 +1,7 @@
 
-Cryptolite - Good, clean, "right" cryptography, bypassing all the options.
+Releaser - an example for getting your GitHub project to Maven Central.
 
-    Copyright (C) 2011  Workdocx Ltd.
+    Copyright (C) 2013  David Carboni.
 
      This library is free software; you can redistribute it and/or
      modify it under the terms of the GNU Lesser General Public
@@ -16,7 +16,4 @@ Cryptolite - Good, clean, "right" cryptography, bypassing all the options.
     You should have received a copy of the GNU Lesser General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-If you have any questions please contact cryptolite@workdocx.com, or 
-write to WorkDocx, 1 The Mews, Wharf Street, Godalming, GU7 2PN.
-
-http://workdocx.com/
+If you have any questions please contact me via https://github.com/davidcarboni/
