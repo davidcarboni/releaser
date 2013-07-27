@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+	<servers>
+
+		<!-- Local Nexus for testing: -->
+		<server>
+			<id>localhost-nexus-snapshots</id>
+			<username>deployment</username>
+			<password>password</password>
+		</server>
+		<server>
+			<id>localhost-nexus-staging</id>
+			<username>deployment</username>
+			<password>password</password>
+		</server>
+
+		<!-- Sonatype Nexus - the real thing: -->
+		<!-- <server> -->
+		<!-- <id>sonatype-nexus-snapshots</id> -->
+		<!-- <username>username</username> -->
+		<!-- <password>password</password> -->
+		<!-- </server> -->
+		<!-- <server> -->
+		<!-- <id>sonatype-nexus-staging</id> -->
+		<!-- <username>username</username> -->
+		<!-- <password>password</password> -->
+		<!-- </server> -->
+
+	</servers>
+
+	<!-- If opt to have you key passphrase automatically passed to the build, uncomment this section: -->
+	<!-- <profiles> -->
+	<!-- <profile> -->
+	<!-- <id>sign</id> -->
+	<!-- <property> -->
+	<!-- <name>performRelease</name> -->
+	<!-- <value>true</value> -->
+	<!-- </property> -->
+	<!-- <properties> -->
+	<!-- <gpg.passphrase>NB this is where you want to encrypt your passphrase. 
+		See http://maven.apache.org/guides/mini/guide-encryption.html</gpg.passphrase> -->
+	<!-- </properties> -->
+	<!-- </profile> -->
+	<!-- </profiles> -->
+
+</settings>
