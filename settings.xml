@@ -5,7 +5,7 @@
 
 	<servers>
 
-		<!-- Local Nexus for testing: -->
+		<!-- Local Nexus - for testing: -->
 		<server>
 			<id>localhost-nexus-snapshots</id>
 			<username>deployment</username>
