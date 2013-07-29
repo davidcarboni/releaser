@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.davidcarboni</groupId>
 	<artifactId>releaser</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Releaser</name>
 	<description>
@@ -26,7 +26,7 @@
 		<url>https://github.com/davidcarboni/releaser</url>
 		<connection>scm:git:git://github.com/davidcarboni/releaser.git</connection>
 		<developerConnection>scm:git:git@github.com:davidcarboni/releaser.git</developerConnection>
-		<tag>releaser-0.0.3</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
