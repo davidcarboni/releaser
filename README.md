@@ -23,7 +23,7 @@ You'll also need to follow the instructions for setting up a Sonatype Jira accou
 
 ### GPG key generation
 
-Here's a terse summary of the GPG commands you'll need to generate and publish a key for signing your artifacts. For the full-fat version, see https://docs.sonatype.org/display/Repository/How+To+Generate+PGP+Signatures+With+Maven:
+Here's a terse summary of the GPG commands you'll need to generate and publish a key for signing your artifacts. For the full version, see https://docs.sonatype.org/display/Repository/How+To+Generate+PGP+Signatures+With+Maven:
 
     # is GPG installed?
     gpg --version 
@@ -50,12 +50,12 @@ Here's a terse summary of the GPG commands you'll need to generate and publish a
 ### Test with a local Nexus
 
 Try running with a local Nexus instance to get the hang of it:
- * download from http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz
+ * download from [http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz](http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz "Sonatype download")
  * unpack
  * cd into `bin/`
- * run ./nexus
+ * run `./nexus`
  * `tail ../logs/wrapper.log`
- * open http://localhost:8081/nexus/
+ * open [http://localhost:8081/nexus/](http://localhost:8081/nexus/ "If you have Nexus installed and running locally, this link should work for you")
  * log in as admin/admin123
  * navigate to Security->Users in the left-hand menu
  * right-click the "deployment" user and set password
