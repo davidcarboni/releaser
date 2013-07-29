@@ -56,10 +56,11 @@ Try running with a local Nexus instance to get the hang of it:
  * run `./nexus`
  * `tail ../logs/wrapper.log`
  * open [http://localhost:8081/nexus/](http://localhost:8081/nexus/ "If you have Nexus installed and running locally this link will work for you")
- * log in as `admin`/`admin123`
- * navigate to `Security`->`Users` in the left-hand menu
- * right-click the "deployment" user and set password
- * an example Maven `settings.xml` is included in the root of this project
+ * the default Nexus deployment username and password is set in the example Maven `settings.xml` included in the root of this project. To change the password:
+   * log in as `admin`/`admin123`
+   * navigate to `Security`->`Users` in the left-hand menu
+   * right-click the _deployment_ user and set a password
+   * an example Maven `settings.xml` is included in the root of this project
 
 
 ### Maven release process

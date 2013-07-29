@@ -9,12 +9,12 @@
 		<server>
 			<id>localhost-nexus-snapshots</id>
 			<username>deployment</username>
-			<password>password</password>
+			<password>deployment123</password>
 		</server>
 		<server>
 			<id>localhost-nexus-staging</id>
 			<username>deployment</username>
-			<password>password</password>
+			<password>deployment123</password>
 		</server>
 
 		<!-- Sonatype Nexus - the real thing: -->
