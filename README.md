@@ -13,8 +13,8 @@ This project is based on these instructions: http://datumedge.blogspot.co.uk/201
 ### How do I use it?
 
 There are two files of interest in this project:
- * pom.xml - a POM file that meets Maven Central requirements and defines a deployment configuration
- * settings.xml - a Maven user settings file that defines release deployment configuration
+ * `pom.xml` - a POM file that meets Maven Central requirements and defines a deployment configuration
+ * `settings.xml` - a Maven user settings file that defines release deployment configuration
 
 These are set up initially for you to test with a local Nexus instance, but also contain the Sonatype OSS repository information, commented out.
 
@@ -71,4 +71,5 @@ For more options, including rolling back a release or cleaning up a failed relea
 Good luck!
 
 David Carboni
+
 https://github.com/davidcarboni/
