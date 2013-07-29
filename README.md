@@ -55,11 +55,11 @@ Try running with a local Nexus instance to get the hang of it:
  * cd into `bin/`
  * run `./nexus`
  * `tail ../logs/wrapper.log`
- * open [http://localhost:8081/nexus/](http://localhost:8081/nexus/ "If you have Nexus installed and running locally, this link should work for you")
- * log in as admin/admin123
- * navigate to Security->Users in the left-hand menu
+ * open [http://localhost:8081/nexus/](http://localhost:8081/nexus/ "If you have Nexus installed and running locally this link will work for you")
+ * log in as `admin`/`admin123`
+ * navigate to `Security`->`Users` in the left-hand menu
  * right-click the "deployment" user and set password
- * an example Maven settings.xml is included in the root of this project
+ * an example Maven `settings.xml` is included in the root of this project
 
 
 ### Maven release process
