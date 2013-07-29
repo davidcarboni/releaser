@@ -5,18 +5,20 @@ Releaser
 
 ### What is this?
 
-It's a minimal example to get you started releasing your project from Github to Maven Central.
+It's a minimal a reference example for setting up your project for deployment to Maven Central.
+
+This project is based on these instructions: http://datumedge.blogspot.co.uk/2012/05/publishing-from-github-to-maven-central.html
 
 
 ### How do I use it?
-
-This is intended as a reference for setting up your project for deployment to Maven Central.
 
 There are two files of interest in this project:
  * pom.xml - a POM file that meets Maven Central requirements and defines a deployment configuration
  * settings.xml - a Maven user settings file that defines release deployment configuration
 
-These are set up initially for you to test with a local Nexus instance, but also contain the Sonatype OSS repository information commented out.
+These are set up initially for you to test with a local Nexus instance, but also contain the Sonatype OSS repository information, commented out.
+
+You'll also need to follow the instructions for setting up a Sonatype Jira account and creating a ticket here: https://issues.sonatype.org/
 
 
 ### GPG key generation
