@@ -68,6 +68,14 @@ Try running with a local Nexus instance to get the hang of it:
 
 For more options, including rolling back a release or cleaning up a failed release, see: http://maven.apache.org/maven-release/maven-release-plugin/
 
+
+### Next steps
+
+Once you're set up with Sonatype, have deployed your artifacts and commented on your Jira ticket, you'll need to follow these instructions in order to complete the process:
+
+https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide#SonatypeOSSMavenRepositoryUsageGuide-8a.ReleaseIt
+
+
 Good luck!
 
 David Carboni
