@@ -7,12 +7,12 @@
 
 		<!-- Local Nexus - for testing: -->
 		<server>
-			<id>workdocx-nexus-snapshots</id>
+			<id>localhost-nexus-snapshots</id>
 			<username>deployment</username>
 			<password>deployment123</password>
 		</server>
 		<server>
-			<id>workdocx-nexus-release</id>
+			<id>localhost-nexus-staging</id>
 			<username>deployment</username>
 			<password>deployment123</password>
 		</server>
