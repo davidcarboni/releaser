@@ -23,7 +23,7 @@ You'll also need to follow the instructions for setting up a Sonatype Jira accou
 
 ### GPG key generation
 
-Here's a terse summary of the GPG commands you'll need to generate and publish a key for signing your artifacts. For the full version, see https://docs.sonatype.org/display/Repository/How+To+Generate+PGP+Signatures+With+Maven:
+Here's a terse summary of the GPG commands you'll need to generate and publish a key for signing your artifacts. For the full version, see https://docs.sonatype.org/display/Repository/How+To+Generate+PGP+Signatures+With+Maven
 
     # is GPG installed?
     gpg --version 
