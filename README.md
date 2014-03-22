@@ -58,10 +58,10 @@ Try running with a local Nexus instance to get the hang of it:
  * open [http://localhost:8081/nexus/](http://localhost:8081/nexus/ "If you have Nexus installed and running locally this link will work for you")
  * the default Nexus deployment username and password are already set in the example Maven `settings.xml` in the root of this project.
  * if you do practice releases, note that the tags created by the release plugin will get pushed to your remote so you'll need to delete them after practice runs. Deleting remote tags isn't obvious so here's a post that explains how: [http://nathanhoad.net/how-to-delete-a-remote-git-tag](http://nathanhoad.net/how-to-delete-a-remote-git-tag). The summary is:
-
-    git tag -d 12345
-    git push origin :refs/tags/12345
-
+ 
+     git tag -d 12345 
+     git push origin :refs/tags/12345 
+     
 
 ### Maven release process
  
