@@ -224,9 +224,9 @@
 		<developer>
 			<id>david</id>
 			<name>David Carboni</name>
-			<email>david@carboni.co</email>
+			<email>david@carboni.io</email>
 			<organization>Carboni</organization>
-			<organizationUrl>https://github.com/davidcarboni</organizationUrl>
+			<organizationUrl>https://github.com/carboni</organizationUrl>
 			<url>https://github.com/davidcarboni</url>
 		</developer>
 	</developers>
