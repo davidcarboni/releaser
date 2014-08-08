@@ -70,7 +70,7 @@ The summary is:
  
 Ensure your artifact version is a -SNAPSHOT, then run the following:
  
-     mvn clean release:prepare
+     mvn release:clean release:prepare
      mvn release:perform
 
 For more options, including rolling back a release or cleaning up a failed release, see: http://maven.apache.org/maven-release/maven-release-plugin/
@@ -80,7 +80,11 @@ For more options, including rolling back a release or cleaning up a failed relea
 
 Once you're set up with Sonatype, have deployed your artifacts and commented on your Jira ticket, you'll need to follow these instructions in order to complete the process:
 
-https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide#SonatypeOSSMavenRepositoryUsageGuide-8a.ReleaseIt
+http://central.sonatype.org/pages/ossrh-guide.html
+
+Here are the specific Maven instructions, including the `nexus-staging-maven-plugin` setup:
+
+http://central.sonatype.org/pages/apache-maven.html
 
 
 Good luck!
