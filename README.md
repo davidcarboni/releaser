@@ -75,6 +75,8 @@ Ensure your artifact version is a -SNAPSHOT, then run the following:
 
 For more options, including rolling back a release or cleaning up a failed release, see: http://maven.apache.org/maven-release/maven-release-plugin/
 
+If you find that the release is deploying a SNAPSHOT version instead of the release artifact, it may be because the release process has changed since I first uploaded this project to Github. I've updated these instructions to match, so just check your release plugin configuration matches the example in this project.
+
 
 ### Next steps
 
