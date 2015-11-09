@@ -18,7 +18,7 @@ There are two files of interest in this project:
 
 These are set up initially for you to test with a local Nexus instance, but also contain the Sonatype OSS repository information, commented out.
 
-You'll also need to follow the instructions for setting up a Sonatype Jira account and creating a ticket here: https://issues.sonatype.org/
+You'll also need to follow the instructions for setting up a Sonatype Jira account and creating a ticket here: http://central.sonatype.org/pages/ossrh-guide.html#create-a-ticket-with-sonatype
 
 
 ### GPG key generation
