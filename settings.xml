@@ -31,7 +31,7 @@
 
 	</servers>
 
-	<!-- If opt to have you key passphrase automatically passed to the build, 
+	<!-- If you opt to have your key passphrase automatically passed to the build, 
 		uncomment this section: -->
 	<!-- <profiles> -->
 	<!-- <profile> -->
